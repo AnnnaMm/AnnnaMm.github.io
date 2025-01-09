@@ -1,2 +1,2 @@
-#Portfolio website
+Portfolio website
 The repository contains a data analytics website portfolio.
