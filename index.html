@@ -58,7 +58,8 @@
 											<details class="custom-accordion">
 											<summary>Machine Learning Projects</summary>
 												<p></p>
-												<img src="images/home_image.png" style="padding-left: 0; margin-left: 0; list-style: none; border:thin solid rgb(216, 216, 216); " alt="" width="730" /> 
+												<img src="images/home_image.png" style="padding-left: 0; margin-left: 0; list-style: none; border:thin solid rgb(216, 216, 216); " alt=""
+												 /> 
 												<!-- padding:10px;border:thin solid rgb(216, 216, 216); -->
 												<!-- <p></p> -->
 												<h3><a href="https://github.com/AnnnaMm/Wasted?tab=readme-ov-file">Wasted</a></h3>
@@ -80,7 +81,7 @@
 												<br>
 												<br>
 
-												<img src="images/fr.jpg" style="padding-left: 0; margin-left: 0; list-style: none; border:thin solid rgb(216, 216, 216); " alt="" width="730" />
+												<img src="images/fr.jpg" style="padding-left: 0; margin-left: 0; list-style: none; border:thin solid rgb(216, 216, 216); " alt=""   />
 												<!-- <p></p> -->
 												<h3><a href="https://github.com/AnnnaMm/Fahr-s-disease-detection">Fahr's disease detection</a></h3>
 												Research project
@@ -110,7 +111,10 @@
 												<p></p>
 												<summary>Data Analytics Projects</summary>
 												<!-- 5 -->
-												<iframe title="Stores_Report" width="730" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYzk2MjA4NzQtYmMwYy00OTk0LWE5MDMtNDNlYjRlMWNkMDFhIiwidCI6IjcwYTI4NTIyLTk2OWItNDUxZi1iZGIyLWFiZmVhM2FhYTViZiIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>										<p></p> <!-- https://app.powerbi.com/view?r=eyJrIjoiYzk2MjA4NzQtYmMwYy00OTk0LWE5MDMtNDNlYjRlMWNkMDFhIiwidCI6IjcwYTI4NTIyLTk2OWItNDUxZi1iZGIyLWFiZmVhM2FhYTViZiIsImMiOjl9 -->
+												<div class="iframe-container">
+													<iframe title="Stores_Report" src="https://app.powerbi.com/view?r=eyJrIjoiYzk2MjA4NzQtYmMwYy00OTk0LWE5MDMtNDNlYjRlMWNkMDFhIiwidCI6IjcwYTI4NTIyLTk2OWItNDUxZi1iZGIyLWFiZmVhM2FhYTViZiIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+												</div>												<p></p> <!-- https://app.powerbi.com/view?r=eyJrIjoiYzk2MjA4NzQtYmMwYy00OTk0LWE5MDMtNDNlYjRlMWNkMDFhIiwidCI6IjcwYTI4NTIyLTk2OWItNDUxZi1iZGIyLWFiZmVhM2FhYTViZiIsImMiOjl9 -->
+												
 												<h3><a href="https://github.com/AnnnaMm/Wasted?tab=readme-ov-file">Stores Report</a></h3>
 												Academic project
 												<div>
@@ -131,7 +135,7 @@
 												
 
 												<!-- 1 -->
-												<img src="images/example_output_credit.png" style="padding-left: 0; margin-left: 0; list-style: none; border:thin solid rgb(216, 216, 216); " alt="" width="730" />
+												<img src="images/example_output_credit.png" style="padding-left: 0; margin-left: 0; list-style: none; border:thin solid rgb(216, 216, 216); " alt="" />
 												<p></p>
 												<h3><a href="https://github.com/AnnnaMm/Statistical-analysis-of-the-impact-of-the-Safe-Credit-2-program-on-apartment-prices-in-Poland/tree/main">Statistical analysis of the impact of the introduction of the "Safe Credit 2%" program on apartment prices in Poland</a></h3>
 												Bachelor thesis
@@ -181,8 +185,9 @@
 													var vizElement = divElement.getElementsByTagName('object')[0];                    
 													
 													// Forces the chart to scale to the container width, with a set height
-													vizElement.style.width = '750px';
-													vizElement.style.height = '600px'; 
+													// Автоматично адаптуємо ширину під екран
+													vizElement.style.width = '100%';
+													vizElement.style.height = '600px'; /* Висоту залишаємо фіксованою, щоб зручно було скролити графік */ 
 													
 													var scriptElement = document.createElement('script');                    
 													scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
