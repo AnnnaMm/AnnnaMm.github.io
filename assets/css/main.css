@@ -3246,54 +3246,53 @@ body {
 .custom-accordion {
   width:100%;
   max-width: 100%;
-  margin-left: 0; /* Або -40px, пограйтеся з цифрою */
+  margin-left: 0; 
   margin-bottom: 15px;
 }
 
 .custom-accordion summary {
-  font-size: 1.25rem; /* Збільшуємо шрифт (приблизно 20px) */
-  /*font-weight: 600;    Робимо текст напівжирним */
-  padding: 16px 20px; /* Додаємо відступи всередині */
+  font-size: 1.25rem;
+  /*font-weight: 600;  */
+  padding: 16px 20px; 
   background-color: transparent; 
   border-radius: 0.35em;
 
   border: solid 3px #efefef;
   color: #787878 !important;
-  cursor: pointer;    /* Курсор у вигляді "руки" при наведенні */
+  cursor: pointer;    
   
-  /* Використовуємо Flexbox, щоб рознести текст і наш новий значок по краях */
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  /* ПРИБИРАЄМО СТАНДАРТНИЙ ТРИКУТНИК */
+
   list-style: none;
 }
 
-/* Спеціальний хак, щоб прибрати трикутник у браузерах Safari (на Mac/iPhone) */
+
 .custom-accordion summary::-webkit-details-marker {
   display: none;
 }
 
-/* ДОДАЄМО ВЛАСНИЙ ЗНАК (наприклад, Плюс) */
+
 .custom-accordion summary::after {
-  content: '\f054'; /* Код стрілочки вправо (chevron-right) */
-  font-family: 'Font Awesome 5 Free'; /* Вказуємо шрифт іконок */
-  font-weight: 900; /* Обов'язково для FontAwesome */
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free'; 
+  font-weight: 900;
   font-size: 1.2rem; 
-  color: #981717; /* Ваш фірмовий темно-червоний колір */
-  transition: transform 0.3s ease; /* Плавна анімація */
+  color: #981717; 
+  transition: transform 0.3s ease;
 }
 
-/* ЗМІНЮЄМО ЗНАК, КОЛИ БЛОК ВІДКРИТО */
-/* Атрибут [open] з'являється автоматично, коли користувач клікає на details */
+
 .custom-accordion[open] summary::after {
-  content: '\f078'; /* Код стрілочки вниз (chevron-down) */
-  color: #787878; /* Сірий колір для відкритого стану */
+  content: '\f078'; 
+  color: #787878; 
 }
 
 
-/* Обнуляємо відступи для обгортки акордеонів */
+
 .accordion-wrapper {
   padding-left: 0 !important;
   margin-left: 0 !important;
@@ -3305,11 +3304,11 @@ body {
   margin-left: 0 !important;
 }
 
-/* Контейнер для адаптивного Power BI / YouTube */
+
 .iframe-container {
     position: relative;
     width: 100%;
-    padding-bottom: 66%; /* Залежить від пропорцій дашборду (висота/ширина * 100). 66% добре підходить для Power BI */
+    padding-bottom: 66%; 
     height: 0;
     overflow: hidden;
     margin-bottom: 20px;
@@ -3321,4 +3320,18 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.custom-accordion img, 
+.details-content img {
+    max-width: 100% !important;
+    width: auto !important;    
+    height: auto !important;   
+    box-sizing: border-box !important;
+}
+
+
+#three img {
+    max-width: 100% !important;
+    height: auto !important;
 }
