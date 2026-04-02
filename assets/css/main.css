@@ -3335,3 +3335,25 @@ body {
     max-width: 100% !important;
     height: auto !important;
 }
+
+
+
+
+
+
+
+.work-item .image.thumb {
+    display: block;
+    text-align: center; 
+    background: transparent !important;
+    border: none !important;
+}
+
+.work-item .image.thumb img {
+    display: block;
+    margin: 0 auto !important; 
+    max-width: 100% !important;
+    width: auto !important;     
+    height: auto !important;   
+   
+}
